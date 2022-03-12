@@ -1,3 +1,1 @@
-
-
-export {} from "./modules"
+export { run } from "./modules/interpreter"

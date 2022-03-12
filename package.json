@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node test/test.js",
     "watch": "tsc -w",
-    "build": "tsc && npx nearleyc src/modules/grammar/arum.ne --output src/modules/grammar/arum.ts"
+    "build": "tsc && npx nearleyc src/modules/grammar/arum.ne --output src/modules/grammar/arum.js"
   },
   "repository": {
     "type": "git",
