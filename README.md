@@ -24,7 +24,7 @@ modu Kerbal {
 	occupation: string
 }
 
-fn main(){
+main = () =>{
 	println("Hello world!");
 
 	Kerbal jul = new Kerbal("Jul Specifically", 14, "Engineer");
@@ -35,4 +35,6 @@ fn main(){
 		println(jul.name, "is old enough!")
 	}
 }
+
+main();
 ```
