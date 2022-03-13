@@ -1,32 +1,32 @@
-import { compile } from "moo";
+import { compile } from 'moo';
 
 export let lexer = compile({
-    // Whitespace & comments
-    ws: /[ \t]+/,
-    comment: /\/\/.*/,
+	// Whitespace & comments
+	ws: /[ \t]+/,
+	comment: /\/\/.*/,
 
-    // Types
+	// Types
 	type: ['identifier', 'string', 'int', 'boolean', 'null', 'undefined'],
-    identifier: /[a-zA-Z_][a-zA-Z0-9_]*/,
-    number: /[0-9]+/,
-    string: /"(?:\\["\\]|[^\n"\\])*"/,
-    boolean: /true|false/,
-    null: /null/,
-    undefined: /undefined/,
+	identifier: /[a-zA-Z_][a-zA-Z0-9_]*/,
+	number: /[0-9]+/,
+	string: /"(?:\\["\\]|[^\n"\\])*"/,
+	boolean: /true|false/,
+	null: /null/,
+	undefined: /undefined/,
 
-    // Keywords
-    var_type: ['set', 'local', 'const',],
-    break: 'break',
+	// Keywords
+	var_type: ['set', 'local', 'const'],
+	break: 'break',
 
-    // Other stuff....
-    lparen: '(',
-    rparen: ')',
-    lbracket: '[',
-    rbracket: ']',
-    lbrace: '{',
-    rbrace: '}',
-    longarrow: '=>',
-    colon: ":",
-    assign: '=',
-    newline: { match: /[\n\r]+/, lineBreaks: true },
+	// Other stuff....
+	lparen: '(',
+	rparen: ')',
+	lbracket: '[',
+	rbracket: ']',
+	lbrace: '{',
+	rbrace: '}',
+	longarrow: '=>',
+	colon: ':',
+	assign: '=',
+	newline: { match: /[\n\r]+/, lineBreaks: true },
 });
