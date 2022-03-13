@@ -101,7 +101,7 @@ lambda -> %lparen _ (param_list _):? _ %rparen _ml %longarrow _ lambda_body
     %}
     
 param_list
-    -> %identifier (__ %identifier):*
+    -> %identifier (_ %comma _ %identifier):*
         {%
             (data) => {
                 const rpieces = data[1];
