@@ -4,10 +4,18 @@ export let runtime = `
 // UNLESS YOU KNOW WHAT YOU ARE DOING
 const mathjs = require('mathjs');
 const fs = require('fs');
-// ETC FUNCTIONS //
-function write(...args) {
-    console.log(...args);
+// BEGIN I/O
+function print(args) {
+    process.stdout.write(args);
 }
+
+function println(args) {
+    console.log(args);
+}
+
+// END I/O
+// BEGIN ETC 
+
 function cases(x, y, args) {
     switch (args) {
         case '==':
@@ -30,9 +38,6 @@ function self(me) {
 }
 // END ETC FUNCTIONS //
 // MATH FUNCTIONS //
-function math(...args) {
-    return mathjs.evaluate(args.join(""));
-}
 function evaluate(x, y, args) {
     switch (args) {
         case '+':
