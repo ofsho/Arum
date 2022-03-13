@@ -7,7 +7,6 @@
 		"test": "node test/test.js",
 		"watch": "nodemon --watch src --exec \"npm run build\"",
 
-
 		"build": "npm run build:nearley && npm run build:ts && npm run format",
 		"build:nearley": "nearleyc src\\modules\\grammar\\arum.ne --output src\\modules\\grammar\\arum.js",
 		"build:ts": "tsc",
