@@ -27,15 +27,17 @@
   },
   "homepage": "https://github.com/StalemEngine/Arum#readme",
   "devDependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "onchange": "^7.1.0",
     "prettier": "^2.5.1",
+    "nodemon": "^2.0.15",
     "typescript": "^4.6.2"
   },
   "dependencies": {
     "@types/moo": "^0.5.5",
     "@types/nearley": "^2.11.2",
     "moo": "^0.5.1",
-    "nearley": "^2.20.1",
-    "nodemon": "^2.0.15"
+    "nearley": "^2.20.1"
   }
 }
