@@ -1,4 +1,4 @@
-export const runtime = `
+export let runtime = `
 // RUNTIME FUNCTIONS
 // DO NOT EDIT PAST THIS POINT
 // UNLESS YOU KNOW WHAT YOU ARE DOING
