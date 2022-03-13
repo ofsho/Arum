@@ -5,16 +5,12 @@ const myLexer = require("../lexer.ts")
 @lexer myLexer
 
 statements
-    -> _ statement _
+    ->  _ml statement (__lb_ statement):* _ml
         {%
             (data) => {
-                return [data[1]];
-            }
-        %}
-    | statements %newline _ statement _
-        {%
-            (data) => {
-                return [...data[0], data[3]];
+                const repeated = data[2];
+                const restStatements = repeated.map(chunks => chunks[1]);
+                return [data[1], ...restStatements];
             }
         %}
 
@@ -55,7 +51,7 @@ arg_list
                 return [data[0]];
             }
         %}
-    | arg_list %comma expr
+    | arg_list %comma __ml expr
         {%
             (data) => {
                 return [...data[0], data[2]];
@@ -93,7 +89,7 @@ use -> "use" _ ":" _ %string _
         }
     %}
 
-lambda -> %lparen _ (param_list):? _ %rparen _ %longarrow _ lambda_body
+lambda -> %lparen _ (param_list _):? _ %rparen _ml %longarrow _ lambda_body
     {%
         (data) => {
             return {
@@ -121,20 +117,23 @@ lambda_body
                 return [data[0]];
             }
         %}
-    | %lbrace _ %newline statements %newline _ %rbrace
+    | %lbrace __lb_ statements _ %rbrace
         {%
             (data) => {
                 return data[3]
             }
         %}
 
-# Multiline Optional Whitespace
+# Mandatory line-break with optional whitespace around it
+__lb_ -> (_ %newline):+ _
+
+# Optional multi-line whitespace
 _ml -> (%ws | %newline):*
 
-# Multiline mandatory whitespace
+# Mandatory multi-line whitespace
 __ml -> (%ws | %newline):+
 
-# Optional whitespace
+# Optional whitespace    
 _ -> %ws:*
 
 # Mandatory whitespace

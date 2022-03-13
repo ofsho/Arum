@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "node test/test.js",
-    "watch": "nodemon --watch src --watch test --exec \"npm run build\"",
-    "build": "tsc && npx nearleyc src/modules/grammar/arum.ne --output src/modules/grammar/arum.ts"
+    "watch": "nodemon --watch src --exec \"npm run build\"",
+    "build": "nearleyc src/modules/grammar/arum.ne --o src/modules/grammar/arum.js && tsc"
   },
   "repository": {
     "type": "git",
