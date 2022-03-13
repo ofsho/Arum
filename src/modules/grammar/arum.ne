@@ -1,3 +1,4 @@
+@preprocessor typescript
 @{%
 const myLexer = require("../lexer.ts")
 %}

@@ -4,15 +4,15 @@
 // - lexer.ts
 // - parser.ts
 // - runtime.ts
-
 import { runtime } from "./runtime";
 import { parse } from "./parser";
 
 export function run(file): void {
 	let ast = parse(file)
+	main(ast, false, null);
 }
 
-async function main(ast, isCompile, output) {
+async function main(ast, isCompile: boolean, output: string) {
     if (!ast) { throw new Error("Please specify the file"); }
 
     // We expect the AST to already be an object/array, we run generate to generate the JS code
