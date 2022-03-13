@@ -6,7 +6,10 @@
   "scripts": {
     "test": "node test/test.js",
     "watch": "nodemon --watch src --exec \"npm run build\"",
-    "build": "nearleyc src/modules/grammar/arum.ne --output src/modules/grammar/arum.js && tsc"
+    "build": "npm run build:nearley && npm run build:ts",
+
+	"build:nearley": "nearleyc src/modules/grammar/arum.ne --output src/modules/grammar/arum.js",
+	"build:ts": "tsc"
   },
   "repository": {
     "type": "git",
