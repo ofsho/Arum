@@ -7,7 +7,7 @@
 import { runtime } from './runtime';
 import { parse } from './parser';
 
-export function run(file): void {
+export function run(file: string): void {
 	let ast = parse(file);
 	main(ast, false, null);
 }
