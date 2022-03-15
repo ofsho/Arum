@@ -5,7 +5,7 @@
 	"main": "dist/index.js",
 	"scripts": {
 		"test": "npm run build && node test/test.js",
-		"watch": "nodemon --watch src --exec \"npm run build\"",
+		"watch": "nodemon --watch src/** --exec \"npm run test\"",
 
 		"build": "npm run build:nearley && npm run build:ts && npm run format",
 		"build:nearley": "nearleyc src\\modules\\grammar\\arum.ne --out src\\modules\\grammar\\arum.ts",

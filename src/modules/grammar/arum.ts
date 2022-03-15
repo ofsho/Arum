@@ -10,7 +10,8 @@ declare var lparen: any;
 declare var rparen: any;
 declare var comma: any;
 declare var string: any;
-declare var number: any;
+declare var int: any;
+declare var float: any;
 declare var boolean: any;
 declare var lbracket: any;
 declare var rbracket: any;
@@ -98,7 +99,8 @@ const grammar: Grammar = {
         }
         		},
     {"name": "expr", "symbols": [(lexer.has("string") ? {type: "string"} : string)], "postprocess": id},
-    {"name": "expr", "symbols": [(lexer.has("number") ? {type: "number"} : number)], "postprocess": id},
+    {"name": "expr", "symbols": [(lexer.has("int") ? {type: "int"} : int)], "postprocess": id},
+    {"name": "expr", "symbols": [(lexer.has("float") ? {type: "float"} : float)], "postprocess": id},
     {"name": "expr", "symbols": [(lexer.has("identifier") ? {type: "identifier"} : identifier)], "postprocess": id},
     {"name": "expr", "symbols": [(lexer.has("boolean") ? {type: "boolean"} : boolean)], "postprocess": id},
     {"name": "expr", "symbols": ["fun_call"], "postprocess": id},

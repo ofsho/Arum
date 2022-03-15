@@ -1,6 +1,6 @@
 import { compile } from 'moo';
 
-export const lexer = compile({
+export const lexer: moo.Lexer = compile({
 	// Whitespace & comments
 	ws: /[ \t]+/,
 	comment: /\/\/.*/,
