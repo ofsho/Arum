@@ -1,8 +1,8 @@
 @preprocessor typescript
 @{%
-const myLexer = require("../lexer.ts")
+import '../lexer.ts';
 %}
-@lexer myLexer
+@lexer lexer
 
 statements
 	->  _ml statement (__lb_ statement):* _ml

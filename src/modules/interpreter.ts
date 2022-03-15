@@ -12,7 +12,8 @@ export function run(file: string): void {
 	main(ast, false, null);
 }
 
-async function main(ast, isCompile: boolean, output: string) {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+async function main(ast, isCompile: boolean, _output: string) {
 	if (!ast) {
 		throw new Error('Please specify the file');
 	}
@@ -36,7 +37,7 @@ async function main(ast, isCompile: boolean, output: string) {
 
 function generate(statements): string {
 	// Array for storing the statements
-	const lines: any = [];
+	const lines: string[] = [];
 
 	// For loop to iterate through the statements
 	try {
@@ -55,7 +56,7 @@ function generate(statements): string {
 	return lines.join('\n');
 }
 
-function generateStatement(node): String {
+function generateStatement(node): string {
 	// If/else statement to determine which type of statement we are dealing with
 	if (node.type === 'var_assign') {
 		const state = generateStatement(node.var_value);
