@@ -8,7 +8,7 @@ import { runtime } from './runtime';
 import { parse } from './parser';
 
 export function run(file: string): void {
-	let ast = parse(file);
+	const ast = parse(file);
 	main(ast, false, null);
 }
 
@@ -26,7 +26,7 @@ async function main(ast, isCompile: boolean, output: string) {
         await fs.writeFileSync(output, b64);
         await fs.writeFileSync(output, atb64(jsCode));*/
 	} else {
-		console.log(isCompile, output);
+		//console.log(isCompile, output);
 		jsCode = `${runtime}\n\n\n\n\n\n\n\n\n\n\n` + generate(ast);
 		eval(jsCode);
 	}
@@ -34,7 +34,7 @@ async function main(ast, isCompile: boolean, output: string) {
 	return 0;
 }
 
-function generate(statements): String {
+function generate(statements): string {
 	// Array for storing the statements
 	const lines: any = [];
 
