@@ -6,9 +6,10 @@ export const lexer = compile({
 	comment: /\/\/.*/,
 
 	// Types
-	type: ['identifier', 'string', 'int', 'boolean', 'null', 'undefined'],
+	type: ['identifier', 'string', 'int', 'float', 'boolean', 'null', 'undefined'],
 	identifier: /[a-zA-Z_][a-zA-Z0-9_]*/,
-	number: /[0-9]+/,
+	int: /[0-9]+/,
+	float: /^[+-]?\d+(\.\d+)?$/,
 	string: /"(?:\\["\\]|[^\n"\\])*"/,
 	boolean: /true|false/,
 	null: /null/,

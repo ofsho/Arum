@@ -60,7 +60,8 @@ arg_list
 
 expr
 	-> %string {% id %}
-	| %number {% id %}
+	| %int {% id %}
+	| %float {% id %}
 	| %identifier {% id %}
 	| %boolean {% id %}
 	| fun_call {% id %}
