@@ -21,7 +21,7 @@ declare var rbrace: any;
 declare var newline: any;
 declare var ws: any;
 
-import '../lexer.ts';
+import { lexer } from '../lexer.ts';
 
 interface NearleyToken {
   value: any;

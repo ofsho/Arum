@@ -1,6 +1,7 @@
 import { compile } from 'moo';
+import { CompiledRules } from 'nearley';
 
-export const lexer: moo.Lexer = compile({
+export const lexer: CompiledRules = compile({
 	// Whitespace & comments
 	ws: /[ \t]+/,
 	comment: /\/\/.*/,

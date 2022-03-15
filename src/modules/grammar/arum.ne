@@ -1,6 +1,6 @@
 @preprocessor typescript
 @{%
-import '../lexer.ts';
+import { lexer } from '../lexer.ts';
 %}
 @lexer lexer
 
