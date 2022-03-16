@@ -21,7 +21,7 @@ This repository is not cleared for public use, this will be fixed later on when 
 Feel free to chat with us on our [discord server](https://discord.gg/gCGmraBRQ8) or see the progress on our [kanban board](https://github.com/orgs/ArumLang/projects/1)
 
 ## Chat
-Hangout with us in our [discord server](https://discord.gg/gCGmraBRQ8)!
+Hangout with us in our [discord server](https://discord.gg/gCGmraBRQ8)
 
 ## Usage/Examples
 ```
