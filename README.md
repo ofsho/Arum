@@ -13,7 +13,7 @@ Expect sphagetti code while contributing, we are not cleared for public use.
 ---
 
 # Arum
-A multiuse scripting language made in Typescript with syntax inspired by C while being beginner friendly
+Arum is an interpreted language written in TypeScript with Nearley and Moo, with syntax inspiring off of compiled languages such as C and Rust, while also being very beginner friendly
 
 ## Get started
 This repository is not cleared for public use, this will be fixed later on when we have a tested stable version
