@@ -25,25 +25,29 @@ Hangout with us in our [discord server](https://discord.gg/gCGmraBRQ8)!
 
 ## Usage/Examples
 ```
-use: "std/io";
+use:"std"
+
 
 modu Kerbal {
-	name: string,
-	age: i16,
-	occupation: string
+
+ name: String;
+
+ age: Number;
+
+ occupation: String;
+
+ beenLikedBefore: Bool;
+
 }
 
-main = () =>{
-	println("Hello world!");
+main=()=>{
 
-	Kerbal jul = new Kerbal("Jul Specifically", 14, "Engineer");
+ Jul Kerbal = new Kerbal("Jul", 17, "Student", true);
 
-	if (jul.age < 18) {
-		println(jul.name, "is not old enough!")
-	}else{
-		println(jul.name, "is old enough!")
-	}
+
+ println(Jul.name);
+
 }
 
-main();
+main()
 ```
