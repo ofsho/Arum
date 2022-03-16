@@ -16,7 +16,7 @@ Expect sphagetti code while contributing, we are not cleared for public use.
 A multiuse scripting language made in Typescript with syntax inspired by C while being beginner friendly
 
 ## Get started
-Get started on ArumLang (todo: fix this b4 going public)
+This repository is not cleared for public use, this will be fixed later on when we have a tested stable version
 
 ## Chat
 Hangout with us in our [discord server](https://discord.gg/gCGmraBRQ8)!
