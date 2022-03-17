@@ -37,30 +37,11 @@ function self(me) {
 }
 // END ETC FUNCTIONS //
 // MATH FUNCTIONS //
-function evaluate(x, y, args) {
-	switch (args) {
-		case '+':
-			return x + y;
-		case '-':
-			return x - y;
-		case '*':
-			return x * y;
-		case '/':
-			return x / y;
-		case '%':
-			return x % y;
-		case '**':
-			return Math.pow(x, y);
-		case '>':
-			return x > y;
-		case '<':
-			return x < y;
-		case '>=':
-			return x >= y;
-		case '<=':
-			return x <= y;
-	}
-}
+function add(one, two) { return one + two }
+function sub(one, two) { return one - two }
+function mul(one, two) { return one * two }
+function div(one, two) { return one / two }
+
 function random(min, max) {
 	min = Math.ceil(min);
 	max = Math.floor(max);
