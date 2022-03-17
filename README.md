@@ -5,6 +5,7 @@
 [![Code License](https://img.shields.io/github/license/ArumLang/Arum?style=flat-square)](https://github.com/JERScript/JERscript/blob/master/LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/ArumLang/Arum?style=flat-square)](https://github.com/JERScript/JERscript/stargazers)
 [![Discord](https://img.shields.io/discord/942973329386655805?label=discord&logo=discord&logoColor=%23ffffff&style=flat-square)](https://discord.gg/gCGmraBRQ8)
+[![Join the chat at https://gitter.im/ArumLang/ArumLang](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ArumLang/ArumLang?utm_source=badge&utm_medium=badge&utm_content=badge)
 ## ⚠ WARNING ⚠
 This repository is not cleared for production/public use, and is currently in the development phase.
 
@@ -18,10 +19,10 @@ Arum is an interpreted language written in TypeScript with Nearley and Moo, with
 ## Get started
 This repository is not cleared for public use, this will be fixed later on when we have a tested stable version
 
-Feel free to chat with us on our [discord server](https://discord.gg/gCGmraBRQ8) or see the progress on our [kanban board](https://github.com/orgs/ArumLang/projects/1)
+Feel free to chat with us on our [discord server](https://discord.gg/gCGmraBRQ8), [gitter chat](https://gitter.im/ArumLang/ArumLang) or see the progress on our [kanban board](https://github.com/orgs/ArumLang/projects/1)
 
 ## Chat
-Hangout with us in our [discord server](https://discord.gg/gCGmraBRQ8)!
+Hangout with us in our [discord server](https://discord.gg/gCGmraBRQ8) or our [Gitter chat](https://gitter.im/ArumLang/ArumLang)!
 
 ## Usage/Examples
 ```
