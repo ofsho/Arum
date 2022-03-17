@@ -1,5 +1,4 @@
 import { compile } from 'moo';
-import { CompiledRules } from 'nearley';
 
 export const lexer: moo.Lexer = compile({
 	// Whitespace & comments

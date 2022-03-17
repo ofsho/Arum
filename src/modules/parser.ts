@@ -1,7 +1,7 @@
-import * as nearley from 'nearley';
-import * as grammar from '';
+import { Parser, Grammar } from 'nearley';
+import grammar from './grammar/arum';
 
-const parser = new nearley.Parser(nearley.Grammar.fromCompiled(grammar));
+const parser = new Parser(Grammar.fromCompiled(grammar));
 
 export function parse(file) {
 	if (!file) {
