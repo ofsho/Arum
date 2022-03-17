@@ -1,7 +1,7 @@
 import { compile } from 'moo';
 import { CompiledRules } from 'nearley';
 
-export const lexer: CompiledRules = compile({
+export const lexer: moo.Lexer = compile({
 	// Whitespace & comments
 	ws: /[ \t]+/,
 	comment: /\/\/.*/,
@@ -20,7 +20,7 @@ export const lexer: CompiledRules = compile({
 	var_type: ['set', 'local', 'const'],
 	break: 'break',
 
-	// Other stuff....
+	// Other stuff...
 	lparen: '(',
 	rparen: ')',
 	lbracket: '[',
