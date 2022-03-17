@@ -4,7 +4,7 @@ export let runtime = `
 // RUNTIME FUNCTIONS
 // DO NOT EDIT PAST THIS POINT
 // UNLESS YOU KNOW WHAT YOU ARE DOING
-const mathjs = require('mathjs');
+// const mathjs = require('mathjs');
 const fs = require('fs');
 // BEGIN I/O
 function print(args) {
