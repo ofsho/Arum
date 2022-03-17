@@ -9,11 +9,7 @@
 
 		"build": "npm run build:nearley && npm run build:ts && npm run format",
 		"build:nearley": "nearleyc src\\modules\\grammar\\arum.ne --out src\\modules\\grammar\\arum.ts",
-		"build:ts": "tsc",
-
-		"format": "npm run format:prettier && npm run lint",
-		"format:prettier": "prettier --config .prettierrc \"src\\**\\*.ts\" --write",
-		"lint": "eslint --ext .ts src"
+		"build:ts": "tsc"
 	},
 	"repository": {
 		"type": "git",
