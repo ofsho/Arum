@@ -12,8 +12,8 @@
 		"prettier"
 	],
 	"rules": {
-		"no-console": 1,       // 1 means warning
+		"no-console": 0,       // 1 means warning
 		"endOfLine": 0, // 0 means nothing
-		"prettier/prettier": 1 // 2 means error
+		"prettier/prettier": 0 // 2 means error
 	}
 }

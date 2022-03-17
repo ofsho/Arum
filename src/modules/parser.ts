@@ -1,5 +1,5 @@
 import * as nearley from 'nearley';
-import * as grammar from './grammar/arum';
+import * as grammar from '';
 
 const parser = new nearley.Parser(nearley.Grammar.fromCompiled(grammar));
 
