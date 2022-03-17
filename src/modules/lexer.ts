@@ -9,7 +9,7 @@ export const lexer: moo.Lexer = compile({
 	type: ['identifier', 'string', 'int', 'float', 'boolean', 'null', 'undefined'],
 	identifier: /[a-zA-Z_][a-zA-Z0-9_]*/,
 	int: /[0-9]+/,
-	float: /^[+-]?\d+(\.\d+)?$/,
+	//float: /^[+-]?\d+(\.\d+)?$/,
 	string: /"(?:\\["\\]|[^\n"\\])*"/,
 	boolean: /true|false/,
 	null: /null/,
