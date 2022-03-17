@@ -9,11 +9,12 @@ import { parse } from './parser';
 
 export function run(file: string): void {
 	const ast = parse(file);
+	console.log(ast)
 	main(ast, false, null);
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-async function main(ast, isCompile: boolean, _output: string) {
+export async function main(ast, isCompile: boolean, _output: string) {
 	if (!ast) {
 		throw new Error('Please specify the file');
 	}
@@ -28,7 +29,10 @@ async function main(ast, isCompile: boolean, _output: string) {
         await fs.writeFileSync(output, atb64(jsCode));*/
 	} else {
 		//console.log(isCompile, output);
-		jsCode = `${runtime}\n\n\n\n\n\n\n\n\n\n\n` + generate(ast);
+
+		// Put a main() function to screw over people when they dont have a main() function
+
+		jsCode = `${runtime}\n\n\n\n\n\n\n\n\n\n\n` + generate(ast) + "\nmain();";
 		eval(jsCode);
 	}
 	//await fs.writeFileSync("log/out.log", jsCode)

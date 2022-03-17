@@ -5,7 +5,7 @@ const parser = new Parser(Grammar.fromCompiled(grammar));
 
 export function parse(file) {
 	if (!file) {
-		throw new Error('Please specify a file');
+		throw new Error('Error: Please specify text to parse.');
 	}
 	parser.feed(file);
 	//fs.writeFileSync('./log/ast.log', JSON.stringify(parser.results, null, 2));
