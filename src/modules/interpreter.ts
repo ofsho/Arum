@@ -9,7 +9,7 @@ import { parse } from './parser';
 
 export function run(file: string): void {
 	const ast = parse(file);
-	console.log(ast)
+	console.log(JSON.stringify(ast))
 	main(ast, false, null);
 }
 
@@ -35,6 +35,7 @@ export async function main(ast, isCompile: boolean, _output: string) {
 		jsCode = `${runtime}\n\n\n\n\n\n\n\n\n\n\n` + generate(ast) + "\nmain();";
 		eval(jsCode);
 	}
+
 	//await fs.writeFileSync("log/out.log", jsCode)
 	return 0;
 }

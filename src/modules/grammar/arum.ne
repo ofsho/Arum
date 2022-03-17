@@ -89,7 +89,7 @@ use -> "use" _ ":" _ %string _
 		}
 	%}
 
-lambda -> %lparen _ (param_list _):? _ %rparen _ml %longarrow _ lambda_body
+lambda -> %lparen _ (param_list _):? _ %rparen _ml %longarrow _ml lambda_body
 	{%
 		(data) => {
 			return {
@@ -111,7 +111,7 @@ param_list
 		%}
 
 lambda_body
-	-> expr 
+	-> expr
 		{%
 			(data) => {
 				return [data[0]];

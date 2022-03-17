@@ -128,7 +128,7 @@ const grammar: Grammar = {
     {"name": "lambda$ebnf$1$subexpression$1", "symbols": ["param_list", "_"]},
     {"name": "lambda$ebnf$1", "symbols": ["lambda$ebnf$1$subexpression$1"], "postprocess": id},
     {"name": "lambda$ebnf$1", "symbols": [], "postprocess": () => null},
-    {"name": "lambda", "symbols": [(lexer.has("lparen") ? {type: "lparen"} : lparen), "_", "lambda$ebnf$1", "_", (lexer.has("rparen") ? {type: "rparen"} : rparen), "_ml", (lexer.has("longarrow") ? {type: "longarrow"} : longarrow), "_", "lambda_body"], "postprocess": 
+    {"name": "lambda", "symbols": [(lexer.has("lparen") ? {type: "lparen"} : lparen), "_", "lambda$ebnf$1", "_", (lexer.has("rparen") ? {type: "rparen"} : rparen), "_ml", (lexer.has("longarrow") ? {type: "longarrow"} : longarrow), "_ml", "lambda_body"], "postprocess": 
         (data) => {
         	return {
         		type: "lambda",
