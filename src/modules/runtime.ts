@@ -139,6 +139,9 @@ function eject(array, index) {
 function findIndex(array, value) {
 	return array.indexOf(value);
 }
+function join(array, delimiter) {
+	return array.join(delimiter);
+}
 // END ARRAY FUNCTIONS//
 //----END RUNTIME FUNCTIONS----//
 `;
