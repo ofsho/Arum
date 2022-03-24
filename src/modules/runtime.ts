@@ -136,6 +136,9 @@ function eject(array, index) {
 	if (!index) { array.pop(); } else { array.splice(index, 1); }
 	return 0;
 }
+function findIndex(array, value) {
+	return array.indexOf(value);
+}
 // END ARRAY FUNCTIONS//
 //----END RUNTIME FUNCTIONS----//
 `;
