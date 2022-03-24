@@ -41,7 +41,7 @@ function add(one, two) { return one + two }
 function sub(one, two) { return one - two }
 function mul(one, two) { return one * two }
 function div(one, two) { return one / two }
-
+function mod(one, two) { return one % two }
 function random(min, max) {
 	min = Math.ceil(min);
 	max = Math.floor(max);
