@@ -56,6 +56,9 @@ function ceil(ceiled){
 function round(rounded){
 	return Math.round(rounded);
 }
+function pow(i, exponent){
+	return Math.pow(i, exponent);
+}
 function sqrt(i){
 	return Math.sqrt(i);
 }
