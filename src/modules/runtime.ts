@@ -132,6 +132,10 @@ function push(array, value) {
 	array.push(value);
 	return 0;
 }
+function eject(array, index) {
+	if (!index) { array.pop(); } else { array.splice(index, 1); }
+	return 0;
+}
 // END ARRAY FUNCTIONS//
 //----END RUNTIME FUNCTIONS----//
 `;
