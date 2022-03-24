@@ -18,9 +18,9 @@ function println(args) {
 function cases(x, y, args) {
 	switch (args) {
 		case '==':
-			return x == y;
+			return x === y;
 		case '!=':
-			return x != y;
+			return x !== y;
 		case '&&':
 			return x && y;
 		case '||':
