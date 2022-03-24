@@ -111,11 +111,6 @@ function $while(cond, func) {
 	}
 	$i = 0;
 }
-function $forEach(array, func) {
-	for (let i = 0; i < array.length; i++) {
-		func(array[i]);
-	}
-}
 // END LOGIC FUNCTIONS //
 // ARRAY FUNCTIONS //
 function split(string, delimiter) {
@@ -135,10 +130,6 @@ function getArrayLength(array) {
 }
 function push(array, value) {
 	array.push(value);
-	return 0;
-}
-function eject(array, index) {
-	if (!index) { array.pop(); } else { array.splice(index, 1); }
 	return 0;
 }
 // END ARRAY FUNCTIONS//
