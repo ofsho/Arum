@@ -15,10 +15,10 @@ Arum is an interpreted language written in TypeScript with Nearley and Moo, with
 ## Get started
 This repository is not cleared for public use, this will be fixed later on when we have a tested stable version
 
-Feel free to chat with us on our [discord server](https://discord.gg/gCGmraBRQ8), [gitter chat](https://gitter.im/ArumLang/ArumLang) or see the progress on our [kanban board](https://github.com/orgs/ArumLang/projects/1)
+Feel free to chat with us on our [Discord server](https://discord.gg/gCGmraBRQ8), [Gitter chat](https://gitter.im/ArumLang/ArumLang) or see the progress on our [kanban board](https://github.com/orgs/ArumLang/projects/1)
 
 ## Chat
-Hangout with us in our [discord server](https://discord.gg/gCGmraBRQ8) or our [Gitter chat](https://gitter.im/ArumLang/ArumLang)!
+Hangout with us in our [Discord server](https://discord.gg/gCGmraBRQ8) or our [Gitter chat](https://gitter.im/ArumLang/ArumLang)!
 
 ## Usage/Examples
 ```
