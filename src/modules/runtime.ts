@@ -56,6 +56,9 @@ function ceil(ceiled){
 function round(rounded){
 	return Math.round(rounded);
 }
+function pow(i, exponent){
+	return Math.pow(i, exponent);
+}
 function sqrt(i){
 	return Math.sqrt(i);
 }
@@ -107,6 +110,11 @@ function $while(cond, func) {
 		func();
 	}
 	$i = 0;
+}
+function $forEach(array, func) {
+	for (let i = 0; i < array.length; i++) {
+		func(array[i]);
+	}
 }
 // END LOGIC FUNCTIONS //
 // ARRAY FUNCTIONS //
