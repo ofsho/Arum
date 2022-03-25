@@ -18,9 +18,9 @@ function println(args) {
 function cases(x, y, args) {
 	switch (args) {
 		case '==':
-			return x == y;
+			return x === y;
 		case '!=':
-			return x != y;
+			return x !== y;
 		case '&&':
 			return x && y;
 		case '||':
@@ -41,7 +41,7 @@ function add(one, two) { return one + two }
 function sub(one, two) { return one - two }
 function mul(one, two) { return one * two }
 function div(one, two) { return one / two }
-
+function mod(one, two) { return one % two }
 function random(min, max) {
 	min = Math.ceil(min);
 	max = Math.floor(max);
@@ -55,6 +55,9 @@ function ceil(ceiled){
 }
 function round(rounded){
 	return Math.round(rounded);
+}
+function pow(i, exponent){
+	return Math.pow(i, exponent);
 }
 function sqrt(i){
 	return Math.sqrt(i);
@@ -132,6 +135,12 @@ function push(array, value) {
 function eject(array, index) {
 	if (!index) { array.pop(); } else { array.splice(index, 1); }
 	return 0;
+}
+function findIndex(array, value) {
+	return array.indexOf(value);
+}
+function join(array, delimiter) {
+	return array.join(delimiter);
 }
 // END ARRAY FUNCTIONS//
 //----END RUNTIME FUNCTIONS----//
