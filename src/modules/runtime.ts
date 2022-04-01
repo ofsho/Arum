@@ -184,6 +184,30 @@ function findIndex(array, value) {
 function join(array, delimiter) {
 	return array.join(delimiter);
 }
+function sort(array, func) {
+    return array.sort(func);
+}
+function reverse(array) {
+    return array.reverse();
+}
+function filter(array, func) {
+    return array.filter(func);
+}
+function map(array, func) {
+    return array.map(func);
+}
+function reduce(array, func, initial) {
+    return array.reduce(func, initial);
+}
+function reduceRight(array, func, initial) {
+    return array.reduceRight(func, initial);
+}
+function slice(array, start, end) {
+    return array.slice(start, end);
+}
+function splice(array, start, end) {
+    return array.splice(start, end);
+}
 // END ARRAY FUNCTIONS//
 //----END RUNTIME FUNCTIONS----//
 `;
