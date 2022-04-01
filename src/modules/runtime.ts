@@ -85,6 +85,21 @@ function acos(i){
 function eq(x, y) {
 	return x === y;
 }
+function gt(x, y) {
+    return x > y;
+}
+function lt(x, y) {
+    return x < y;
+}
+function gte(x, y) {
+    return x >= y;
+}
+function lte(x, y) {
+    return x <= y;
+}
+function neq(x, y) {
+    return x !== y;
+}
 function $if(cond, consequent, alternate) {
 	if (cond) {
 		return consequent();
