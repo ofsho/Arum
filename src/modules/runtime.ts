@@ -13,6 +13,12 @@ function print(args) {
 function println(args) {
 	console.log(args);
 }
+function length(args) {
+    return args.length;
+}
+function get(x, y) {
+    return x[y];
+}
 // END I/O
 // BEGIN ETC 
 function cases(x, y, args) {
