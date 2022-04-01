@@ -80,6 +80,27 @@ function asin(i){
 function acos(i){
 	return Math.acos(i);
 }
+function atan(i){
+    return Math.atan(i);
+}
+function atan2(i, j){
+    return Math.atan2(i, j);
+}
+function exp(i){
+    return Math.exp(i);
+}
+function log(i){
+    return Math.log(i);
+}
+function log10(i){
+    return Math.log10(i);
+}
+function max(...args){
+    return Math.max(...args);
+}
+function min(...args){
+    return Math.min(...args);
+}
 // END MATH FUNCTIONS //
 // LOGIC FUNCTIONS //
 function eq(x, y) {
